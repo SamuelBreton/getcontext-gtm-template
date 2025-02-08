@@ -1,5 +1,20 @@
+# Copyright 2019 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 homepage: "https://www.getcontext.dev"
 documentation: "https://www.getcontext.dev/documentation"
 versions:
-  - sha: d189a07f999b868f7da98c10e5793064c23a97e0
-    changeNotes: Initial release.
+  # Latest version
+  - sha: 110d8b19476f83636313c4653e5176826bfff3f2
+    changeNotes: Update JS
