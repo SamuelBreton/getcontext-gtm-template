@@ -1,4 +1,4 @@
-___TERMS_OF_SERVICE___
+﻿___TERMS_OF_SERVICE___
 
 By creating or modifying this file you agree to Google Tag Manager's Community
 Template Gallery Developer Terms of Service available at
@@ -14,7 +14,10 @@ ___INFO___
   "version": 1,
   "securityGroups": [],
   "displayName": "getContext",
-  "categories": ["ANALYTICS", "ATTRIBUTION"],
+  "categories": [
+    "ANALYTICS",
+    "ATTRIBUTION"
+  ],
   "brand": {
     "id": "getContext",
     "displayName": "getContext",
@@ -35,7 +38,7 @@ ___TEMPLATE_PARAMETERS___
 ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
 const injectScript = require('injectScript');
-var loader_url = "https://cdn.jsdelivr.net/gh/SamuelBreton/getcontext@main/cdn/standalone.js";
+var loader_url = "https://cdn.jsdelivr.net/gh/SamuelBreton/getcontext@main/cdn/context.js";
 injectScript(loader_url);
 data.gtmOnSuccess();
 return loader_url;
