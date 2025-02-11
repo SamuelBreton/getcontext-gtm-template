@@ -15,6 +15,10 @@
 homepage: "https://www.getcontext.dev"
 documentation: "https://www.getcontext.dev/documentation"
 versions:
-  # Latest version
+# Latest version
+  - sha: be3a584687bbf5cf28d70fbb2f82be76a2566269
+    changeNotes: update permission
+	
+# Older versions
   - sha: 110d8b19476f83636313c4653e5176826bfff3f2
     changeNotes: Update JS
