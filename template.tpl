@@ -13,7 +13,7 @@ ___INFO___
   "id": "cvt_temp_public_id",
   "version": 1,
   "securityGroups": [],
-  "displayName": "getContext",
+  "displayName": "getContext - Official",
   "categories": [
     "ANALYTICS",
     "ATTRIBUTION"
@@ -37,8 +37,11 @@ ___TEMPLATE_PARAMETERS___
 
 ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
+const log = require('logToConsole');
 const injectScript = require('injectScript');
-var loader_url = "https://cdn.jsdelivr.net/gh/SamuelBreton/getcontext@main/cdn/context.js";
+const encodeUri = require('encodeUri');
+
+var loader_url = "https://cdn.jsdelivr.net/gh/SamuelBreton/getcontext@main/cdn/context.min.js";
 injectScript(loader_url);
 data.gtmOnSuccess();
 return loader_url;
@@ -61,7 +64,7 @@ ___WEB_PERMISSIONS___
             "listItem": [
               {
                 "type": 1,
-                "string": "https://cdn.jsdelivr.net/gh/SamuelBreton/getcontext@main/cdn/standalone.js"
+                "string": "https://cdn.jsdelivr.net/gh/SamuelBreton/getcontext@main/cdn/context.min.js"
               }
             ]
           }
@@ -70,6 +73,24 @@ ___WEB_PERMISSIONS___
     },
     "clientAnnotations": {
       "isEditedByUser": true
+    },
+    "isRequired": true
+  },
+  {
+    "instance": {
+      "key": {
+        "publicId": "logging",
+        "versionId": "1"
+      },
+      "param": [
+        {
+          "key": "environments",
+          "value": {
+            "type": 1,
+            "string": "debug"
+          }
+        }
+      ]
     },
     "isRequired": true
   }
